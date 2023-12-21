@@ -13,9 +13,10 @@ if v:version ># 703 || v:version ==# 703 && has('patch541')
     setlocal formatoptions+=j
 endif
 
-if executable('fish_indent')
-    setlocal formatexpr=fish#Format()
-endif
+" TODO: make this configurable to disable
+" if executable('fish_indent')
+"     setlocal formatexpr=fish#Format()
+" endif
 
 if executable('fish')
     setlocal omnifunc=fish#Complete
